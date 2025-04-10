@@ -5,7 +5,10 @@ class Person
   // List<string> Interests;
 
   // Ting objektet/personen kan gjøre
-  // void SayHello() { }
+  public void SayHello()
+  {
+    Console.WriteLine($"Hi my name is {this.Name}!");
+  }
   // void ListInterests() { }
 
   // Hvordan ett nytt person objekt skal konstrueres
