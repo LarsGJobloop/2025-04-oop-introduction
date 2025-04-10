@@ -1,5 +1,5 @@
-﻿Console.WriteLine("Hello, World!");
-Console.WriteLine("Testing testing!");
+﻿Console.WriteLine("Welcome!");
+Console.WriteLine("Please enter your name");
 
 // Lese av bruker input
 string? userInput = Console.ReadLine();
@@ -9,5 +9,5 @@ if (userInput == null)
   throw new Exception("No input found!");
 }
 
-Console.WriteLine(userInput);
-
+Person person = new Person(userInput);
+Console.WriteLine(person.Name);
